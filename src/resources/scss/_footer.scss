@@ -1,0 +1,101 @@
+@import "colors";
+
+.tpl-footer {
+  background-color: #3B4050;
+  padding: 56px 15px;
+  color: $white;
+
+  @media screen and (max-width: 575px) {
+    padding-top: 47px;
+  }
+
+  &__block {
+    padding: 24px 0;
+    font-size: 12px;
+    line-height: 160%;
+
+    & > * {
+      margin: 0;
+    }
+
+    & p:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    & ul,
+    & ol {
+      padding-left: 20px;
+    }
+
+    &_title {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 160%;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+
+    &_link {
+      display: block;
+      text-decoration-line: underline;
+      color: $blue1;
+    }
+
+    &_urinfo {
+      padding-top: 0;
+    }
+
+    &_urinfo,
+    &_doc,
+    &_info {
+      border-bottom: 1px solid $grey-dark;
+    }
+
+    &_cards {
+      display: flex;
+      align-items: center;
+      margin-top: 16px;
+    }
+
+    &_card {
+      display: flex;
+      width: 100px;
+      height: 55px;
+      background-color: $white;
+      padding: 5px 6px;
+      border-radius: 10px;
+      box-sizing: border-box;
+
+
+      &:not(:last-child) {
+        margin-right: 24px;
+
+        @media screen and (max-width: 575px) {
+          margin-right: 16px;
+        }
+      }
+
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    &_notice {
+      & a {
+        font-size: 12px;
+        line-height: 160%;
+        color: #FFFFFF;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+          color: $blue1;
+        }
+      }
+    }
+  }
+
+
+}

@@ -1,0 +1,248 @@
+@import "colors";
+@import "form-common";
+@import "steps-progress";
+
+.tpl-phone-success {
+  padding-top: 56px;
+  padding-bottom: 88px;
+
+
+  @media screen and (max-width: 767px) {
+    padding-top: 32px;
+    padding-bottom: 70px;
+  }
+
+  @media screen and (max-width: 575px) {
+    padding-bottom: 64px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    column-gap: 30px;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__image {
+    max-width: 470px;
+    width: 100%;
+
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+    }
+
+    & .tpl-phone-success__title {
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 120%;
+    color: $black;
+
+    @media screen and (max-width: 575px) {
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 120%;
+      color: #161D35;
+    }
+
+    & span {
+      color: $blue1;
+    }
+  }
+
+  &__img {
+    max-width: 370px;
+    max-height: 370px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin-top: 20px;
+
+    @media screen and (max-width: 767px) {
+      margin: auto;
+      margin-top: 24px;
+    }
+
+    @media screen and (max-width: 575px) {
+      max-width: 324px;
+      max-height: 324px;
+      margin-top: 42px;
+    }
+
+
+    & > * {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  &__data {
+    min-width: 500px;
+    max-width: 670px;
+    width: 100%;
+
+    @media screen and (max-width: 767px) {
+      min-width: unset;
+      max-width: 100%;
+    }
+
+    & .tpl-phone-success__title {
+      display: none;
+
+      @media screen and (max-width: 767px) {
+        display: block;
+        margin-bottom: 24px;
+      }
+    }
+
+    & .tpl-steps-progress {
+      &__fill {
+        width: 75%;
+      }
+    }
+  }
+}
+
+.tpl-phone-data {
+
+  padding-top: 37px;
+  padding-left: 36px;
+  padding-right: 36px;
+  padding-bottom: 64px;
+
+  box-sizing: border-box;
+
+  box-shadow: 0px 12px 25px -1px rgba(61, 109, 201, 0.12);
+  border-radius: 0px 0px 15px 15px;
+
+  @media screen and (max-width: 767px) {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  @media screen and (max-width: 575px) {
+    padding-top: 30px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 35px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 120%;
+    color: $grey-dark;
+    max-width: 423px;
+    width: 100%;
+
+    @media screen and (max-width: 575px) {
+      font-size: 24px;
+      max-width: 290px;
+    }
+  }
+
+  &__info {
+    background-color: #E6F4F9;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 17px;
+    box-sizing: border-box;
+
+    @media screen and (max-width: 575px) {
+      font-size: 14px;
+      line-height: 19px;
+      padding: 14px 16px;
+      margin-top: 29px;
+    }
+  }
+
+  &__form {
+    margin-top: 32px;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 24px;
+
+    @media screen and (max-width: 575px) {
+      flex-direction: column;
+    }
+  }
+
+  &__left {
+    min-width: 100px;
+    max-width: 210px;
+    width: 100%;
+
+    @media screen and (max-width: 575px) {
+      max-width: 100%;
+    }
+  }
+
+  &__right {
+    width: 100%;
+  }
+
+  &__button {
+    margin-top: 33px;
+    width: 100%;
+  }
+
+  &__timer {
+    font-size: 14px;
+    line-height: 140%;
+    color: $grey-dark;
+
+    & span {
+      font-weight: 600;
+    }
+  }
+
+  &__action {
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: $blue1;
+    margin-top: 8px;
+  }
+
+  &__notice {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 140%;
+    color: $blue1;
+
+    margin-top: 24px;
+    margin-bottom: 44px;
+
+    @media screen and (max-width: 575px) {
+      font-weight: 600;
+      margin-top: 24px;
+      margin-bottom: 29px;
+    }
+
+    & svg {
+      min-width: 33px;
+      width: 33px;
+      height: 33px;
+      margin-right: 12px;
+
+      @media screen and (max-width: 575px) {
+        width: 27px;
+        height: 27px;
+        min-width: 27px;
+      }
+    }
+  }
+}

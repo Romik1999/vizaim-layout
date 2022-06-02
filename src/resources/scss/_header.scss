@@ -1,0 +1,71 @@
+@import "colors";
+
+.tpl-header {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 8px rgba(10, 20, 116, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  padding: 15px;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 575px) {
+    min-height: 60px;
+    padding: 5px 15px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 20px;
+
+    @media screen and (max-width: 575px) {
+      column-gap: 10px;
+    }
+  }
+
+  &__title {
+    margin: 0 15px;
+    color: $blue1;
+
+    @media screen and (max-width: 769px) {
+      display: none;
+    }
+
+    & * {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  &__icon {
+    display: none;
+
+    @media screen and (max-width: 769px) {
+      display: flex;
+    }
+  }
+
+  &__support {
+    @media screen and (max-width: 769px) {
+      display: none;
+    }
+  }
+
+  .phone-support {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 140%;
+    color: #A3A5B1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

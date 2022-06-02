@@ -1,0 +1,21 @@
+@import "colors";
+
+.tpl-about {
+  padding-top: 56px;
+  padding-bottom: 56px;
+  background-color: #F9F9FA;
+  font-size: 14px;
+  line-height: 160%;
+
+  @media screen and (max-width: 575px) {
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+
+  &__text {
+    & * {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}

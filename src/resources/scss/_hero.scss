@@ -1,0 +1,58 @@
+@import "colors";
+
+.tpl-hero {
+  padding-top: 64px;
+  padding-bottom: 36px;
+
+  @media screen and (max-width: 575px) {
+    padding-top: 26px;
+    padding-bottom: 25px;
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 42px;
+    line-height: 120%;
+    color: $black;
+
+    @media screen and (max-width: 575px) {
+      font-size: 30px;
+    }
+
+    & * {
+      padding: 0;
+      margin: 0;
+      font-size: inherit;
+      line-height: inherit;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: $grey-dark;
+    margin-top: 16px;
+
+    @media screen and (max-width: 575px) {
+      font-size: 18px;
+      margin-top: 12px;
+    }
+
+    & * {
+      padding: 0;
+      margin: 0;
+      font-size: inherit;
+      line-height: inherit;
+    }
+  }
+
+  &__content {
+    margin-top: 46px;
+
+    @media screen and (max-width: 575px) {
+      margin-top: 24px;
+    }
+
+  }
+}

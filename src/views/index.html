@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+
+    <link rel="stylesheet" href="resources/lib/rangeslider/rangeslider.css"/>
+    <link rel="stylesheet" href="resources/lib/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="resources/css/template.min.css"/>
+    <link rel="stylesheet" href="resources/css/index.min.css"/>
+    <title>Be fin V3</title>
+</head>
+<body>
+
+<section class="tpl-navigation">
+    <ul>
+        <li><a href="confirmation.html">Первичный ввод</a></li>
+        <li><a href="phoneCheck.html">Подтверждение по номеру телефона</a></li>
+        <li><a href="step1.html">Данные о проживании</a></li>
+        <li><a href="step2.html">Паспортные данные</a></li>
+        <li><a href="insurance.html">Страховка</a></li>
+        <li><a href="card.html">Оплата картой</a></li>
+        <li><a href="paymentSuccess.html">Успешная оплата</a></li>
+        <li><a href="shopwindow.html">Витрина подмена</a></li>
+        <li><a href="success.html">Витрина успешная</a></li>
+        <li><a href="unsubscribe1.html">Отказ от страховки первый шаг</a></li>
+        <li><a href="unsubscribe2.html">Отказ от страховки второй шаг</a></li>
+        <li><a href="unsubscribe3.html">Отказ от страховки третий шаг</a></li>
+        <li><a href="unsubscribe4.html">Отказ от страховки четвертый шаг</a></li>
+    </ul>
+
+    <p>новые страницы в сценарии</p>
+
+    <ul>
+        <li><a href="dataCheck.html">Проверка данных</a></li>
+        <li><a href="fraudProtection.html">Защита от мошенничества</a></li>
+        <li><a href="confirmation2.html">Первичный ввод 2 сценарий</a></li>
+        <li><a href="step1(v2).html">Данные о проживании 2 сценарий</a></li>
+        <li><a href="step2(v2).html">Паспотные данные 2 сценарий</a></li>
+    </ul>
+</section>
+
+<style>
+    .tpl-navigation ul li{
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+</style>
+
+<div class="tpl">
+    @@include('blocks/header.html')
+    <main class="tpl-main">
+        @@include('blocks/hero.html')
+        @@include('blocks/advantages.html')
+        @@include('blocks/goals.html')
+        @@include('blocks/features.html')
+        @@include('blocks/help.html')
+        @@include('blocks/faq.html')
+        @@include('blocks/reviews.html')
+        @@include('blocks/bottom-form.html')
+        @@include('blocks/about.html')
+    </main>
+    @@include('blocks/footer.html')
+</div>
+
+
+<script src="resources/lib/jquery-3.6.0.min.js"></script>
+<script src="resources/lib/dadata/dadataSuggestions.min.js"></script>
+<script src="resources/lib/email-autocomplete/jquery.email-autocomplete.js"></script>
+<script src="resources/lib/form-calc/form-calc.min.js"></script>
+<script src="resources/lib/rangeslider/rangeslider.min.js"></script>
+<script src="resources/lib/swiper/swiper-bundle.min.js"></script>
+<script src="resources/js/modernizr.min.js"></script>
+
+<script src="resources/js/template.min.js"></script>
+</body>
+</html>
