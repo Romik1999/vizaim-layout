@@ -7,11 +7,12 @@ body {
 
 .tpl {
   @import "colors";
-  @import "buttons";
-  @import "input";
   @import "header";
   @import "footer";
-  @import "logo";
+  @import "advantages";
+  @import "reviews";
+  @import "faq";
+  @import "creditors";
 
   section{
     padding-left: 15px;
